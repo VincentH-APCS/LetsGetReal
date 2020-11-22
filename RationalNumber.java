@@ -2,21 +2,21 @@ public class RationalNumber extends RealNumber{
   private int numerator, denominator;
 
   public RationalNumber(int nume, int deno){
+    super(0.0);
     if(deno == 0){
       numerator = 0;
       denominator = 1;
     }
-    if(deno < 0){
+    else if(deno < 0){
       numerator = nume * -1;
       denominator = deno * -1;
     }
     else{
-      numerator = num;
+      numerator = nume;
       denominator = deno;
     }
-    super(nume / deno);
   }
 public double getValue(){
-  return value;
+  return numerator / denominator;
 }
 }
