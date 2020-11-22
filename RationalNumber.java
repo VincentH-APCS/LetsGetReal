@@ -7,15 +7,14 @@ public class RationalNumber extends RealNumber{
       numerator = 0;
       denominator = 1;
     }
-    else if(deno < 0){
-      numerator = nume * -1;
-      denominator = deno * -1;
-      reduce();
-    }
     else{
       numerator = nume;
       denominator = deno;
       reduce();
+    }
+    if(denominator < 0){
+      numerator = numerator * -1;
+      denominator = denominator * -1;
     }
   }
   public double getValue(){
@@ -60,13 +59,22 @@ public class RationalNumber extends RealNumber{
     return b;
   }
 private void reduce(){
-   numerator = numerator / gcd(numerator, denominator);
-   denominator = denominator / gcd(numerator, denominator);
+  int gcd = gcd(numerator, denominator);
+   numerator = numerator/gcd;
+   denominator = denominator/gcd;
  }
  public RationalNumber multiply(RationalNumber other){
    RationalNumber product = new RationalNumber(
-   numerator * other.getNumerator(), denominator * other.getDenominator()
+   (this.getNumerator() * other.getNumerator()),
+   (this.getDenominator() * other.getDenominator())
    );
    return product;
+ }
+ public RationalNumber divide(RationalNumber other){
+   RationalNumber quotient = new RationalNumber(
+   this.getNumerator() * other.getDenominator(),
+   this.getDenominator() * other.getNumerator()
+   );
+   return quotient;
  }
 }
