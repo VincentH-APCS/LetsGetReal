@@ -3,21 +3,20 @@ public class RationalNumber extends RealNumber{
 
   public RationalNumber(int nume, int deno){
     super(0.0);
-    if(deno == 0){
+    if(deno == 0 || nume == 0){
       numerator = 0;
       denominator = 1;
     }
     else if(deno < 0){
       numerator = nume * -1;
       denominator = deno * -1;
+      reduce();
     }
     else{
       numerator = nume;
       denominator = deno;
+      reduce();
     }
-    if(numerator / denominator != 0){
-    reduce();
-  }
   }
   public double getValue(){
     return (double)numerator / (double)denominator;
@@ -63,5 +62,11 @@ public class RationalNumber extends RealNumber{
 private void reduce(){
    numerator = numerator / gcd(numerator, denominator);
    denominator = denominator / gcd(numerator, denominator);
+ }
+ public RationalNumber multiply(RationalNumber other){
+   RationalNumber product = new RationalNumber(
+   numerator * other.getNumerator(), denominator * other.getDenominator()
+   );
+   return product;
  }
 }
