@@ -6,17 +6,11 @@ public class Tester{
     RationalNumber d = new RationalNumber(4,0);
     RationalNumber e = new RationalNumber(-5,-15);
 
-    System.out.println(a.getNumerator());
-    System.out.println(a.getDenominator());
-    System.out.println(c.getNumerator());
-    System.out.println(c.getDenominator());
-    System.out.println(d.getNumerator());
-    System.out.println(d.getDenominator());
-    
-    /*System.out.println(a.getValue());
-    System.out.println(b.getValue());
-    System.out.println(c.getValue());
-    System.out.println(d.getValue());
-    System.out.println(e.getValue());*/
+    System.out.println(a.reciprocal());
+    System.out.println(b.reciprocal());
+    System.out.println(c.reciprocal());
+    System.out.println(d.reciprocal());
+    System.out.println(e.reciprocal());
+  
   }
 }
