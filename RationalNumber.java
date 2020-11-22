@@ -29,4 +29,11 @@ public class RationalNumber extends RealNumber{
     RationalNumber newone = new RationalNumber(denominator, numerator);
     return newone;
   }
+  public boolean equals(RationalNumber other){
+    if (numerator == other.getNumerator()
+      && denominator == other.getDenominator()){
+        return true;
+      }
+      else return false;
+  }
 }
