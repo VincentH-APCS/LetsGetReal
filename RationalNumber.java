@@ -77,4 +77,12 @@ private void reduce(){
    );
    return quotient;
  }
+ public RationalNumber add(RationalNumber other){
+   RationalNumber sum = new RationalNumber(
+   (this.getNumerator() * other.getDenominator())+
+   (this.getDenominator() * other.getNumerator()),
+   this.getDenominator() * other.getDenominator()
+   );
+   return sum;
+ }
 }
