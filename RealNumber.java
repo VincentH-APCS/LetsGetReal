@@ -31,7 +31,7 @@ public class RealNumber{
     return product;
   }
   public RealNumber divide(RealNumber other){
-    RealNumber quotient = new RealNunmber(value / other.getValue());
+    RealNumber quotient = new RealNumber(value / other.getValue());
     return quotient;
   }
 }
