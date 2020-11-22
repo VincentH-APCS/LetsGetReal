@@ -23,7 +23,7 @@ public class RealNumber{
     else return false;
   }
   public RealNumber add(RealNumber other){
-    RealNumber sum = (value + other.getValue());
+    RealNumber sum = new RealNumber(value + other.getValue());
     return sum;
   }
 }
