@@ -7,13 +7,8 @@ public class Tester{
     RealNumber e = new RealNumber(5.0);
 
     System.out.println(a.getValue());
-    System.out.println(a.add(e));
-    System.out.println(a.getValue());
-    System.out.println(a.add(d));
-    System.out.println(a.toString());
-    System.out.println(b.add(e));
-    System.out.println(b.getValue());
-    System.out.println(a.add(b));
-    System.out.println(a.toString());
+    System.out.println(a.multiply(b));
+    System.out.println(b.multiply(a));
+    System.out.println(e.multiply(c));
   }
 }
