@@ -16,7 +16,6 @@ public class RealNumber{
     if(value == 0 && other.getValue() == 0){
       return true;
     }
-
     if(((value * 1.001) >= other.getValue()) &&
        ((value * 0.999) <= other.getValue())){
       return true;
@@ -24,7 +23,7 @@ public class RealNumber{
     else return false;
   }
   public RealNumber add(RealNumber other){
-    value = (value + other.getValue());
-    return null;
+    double sum = (value + other.getValue());
+    return sum;
   }
 }
