@@ -3,17 +3,15 @@ public class Tester{
     RationalNumber a = new RationalNumber(2,5);
     RationalNumber b = new RationalNumber(3,0);
     RationalNumber c = new RationalNumber(4,10);
-    RationalNumber d = new RationalNumber(4,0);
-    RationalNumber e = new RationalNumber(2,5);
+    RationalNumber d = new RationalNumber(12,14);
+    RationalNumber e = new RationalNumber(5,7);
     RationalNumber f = new RationalNumber(-2,-5);
 
-    System.out.println(a.equals(e));
-    System.out.println(a.equals(f));
-    System.out.println(e.equals(f));
-    System.out.println(f.equals(e));
-    System.out.println(b.equals(d));
-    System.out.println(a.equals(d));
-    System.out.println(e.equals(c));
-    System.out.println(b.equals(e));
+    System.out.println(a.toString());
+    System.out.println(b.toString());
+    System.out.println(c.toString());
+    System.out.println(d.toString());
+    System.out.println(e.toString());
+    System.out.println(f.toString());
   }
 }
