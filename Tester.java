@@ -7,8 +7,8 @@ public class Tester{
     RealNumber e = new RealNumber(5.0);
 
     System.out.println(a.getValue());
-    System.out.println(a.multiply(b));
+    System.out.println(a.divide(b));
     System.out.println(b.multiply(a));
-    System.out.println(e.multiply(c));
+    System.out.println(e.divide(c));
   }
 }
