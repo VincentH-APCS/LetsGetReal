@@ -7,11 +7,13 @@ public class Tester{
     RealNumber e = new RealNumber(5.0);
 
     System.out.println(a.getValue());
-    System.out.println(e.getValue());
-    System.out.println(c.toString());
-    System.out.println(d.toString());
-    System.out.println(a.equals(b));
-    System.out.println(b.equals(c));
-    System.out.println(a.equals(d));
+    System.out.println(a.add(e));
+    System.out.println(a.getValue());
+    System.out.println(a.add(d));
+    System.out.println(a.toString());
+    System.out.println(b.add(e));
+    System.out.println(b.getValue());
+    System.out.println(a.add(b));
+    System.out.println(a.toString());
   }
 }
