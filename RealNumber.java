@@ -23,5 +23,8 @@ public class RealNumber{
     }
     else return false;
   }
-
+  public RealNumber add(RealNumber other){
+    value = (value + other.getValue());
+    return null;
+  }
 }
