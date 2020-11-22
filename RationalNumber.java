@@ -39,4 +39,22 @@ public class RationalNumber extends RealNumber{
   public String toString(){
     return ""+numerator+"/"+denominator;
   }
+  public static int gcd(int a, int b){
+     int c = 0;
+    if(b > a){
+      c = a;
+      a = b;
+      b = c;
+    }
+    for(int i = 0; i < 1;){
+      if(a % b == 0){
+        return b;
+      }
+      else
+        c = a;
+        a = b;
+        b = c % b;
+    }
+    return b;
+  }
 }
