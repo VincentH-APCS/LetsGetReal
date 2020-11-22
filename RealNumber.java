@@ -16,7 +16,9 @@ public class RealNumber{
     if(value == 0 && other.getValue() == 0){
       return true;
     }
-    if((value * 1000)/1000 == (other.getValue() * 1000)/1000){
+
+    if(((value * 1.001) >= other.getValue()) &&
+       ((value * 0.999) <= other.getValue())){
       return true;
     }
     else return false;
