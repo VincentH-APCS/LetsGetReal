@@ -11,10 +11,10 @@ public class Tester{
     RationalNumber tt = new RationalNumber(66,100);
     RationalNumber yy = new RationalNumber(77,200);
 
-  System.out.println(a.add(b));
-  System.out.println(a.add(h));
-  System.out.println(d.add(g));
-  System.out.println(tt.add(yy));
-  System.out.println(h.add(a));
+  System.out.println(a.subtract(b));
+  System.out.println(a.subtract(h));
+  System.out.println(d.subtract(g));
+  System.out.println(tt.subtract(yy));
+  System.out.println(h.subtract(a));
   }
 }
