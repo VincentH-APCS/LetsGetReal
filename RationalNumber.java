@@ -15,7 +15,9 @@ public class RationalNumber extends RealNumber{
       numerator = nume;
       denominator = deno;
     }
+    if(numerator / denominator != 0){
     reduce();
+  }
   }
   public double getValue(){
     return (double)numerator / (double)denominator;
