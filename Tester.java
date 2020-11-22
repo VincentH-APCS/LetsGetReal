@@ -8,21 +8,13 @@ public class Tester{
     RationalNumber f = new RationalNumber(-2,-4);
     RationalNumber g = new RationalNumber(3,10);
     RationalNumber h = new RationalNumber(6,-10);
+    RationalNumber tt = new RationalNumber(66,100);
+    RationalNumber yy = new RationalNumber(77,200);
 
-    System.out.println(a.multiply(b));
-    System.out.println(a.multiply(c));
-    System.out.println(d.multiply(f));
-    System.out.println(f.multiply(d));
-    System.out.println(a.multiply(h));
-    System.out.println(a.getNumerator());
-    System.out.println(a.getDenominator());
-    System.out.println(h.getNumerator());
-    System.out.println(h.getDenominator());
-    System.out.println(h.getValue());
-    System.out.println(g.divide(h));
-    System.out.println(a.divide(c));
-    System.out.println(d.divide(f));
-    System.out.println(f.divide(d));
-    System.out.println(g.divide(e));
+  System.out.println(a.add(b));
+  System.out.println(a.add(h));
+  System.out.println(d.add(g));
+  System.out.println(tt.add(yy));
+  System.out.println(h.add(a));
   }
 }
