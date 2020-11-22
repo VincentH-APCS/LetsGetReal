@@ -85,4 +85,12 @@ private void reduce(){
    );
    return sum;
  }
+ public RationalNumber subtract(RationalNumber other){
+   RationalNumber difference = new RationalNumber(
+   (this.getNumerator() * other.getDenominator())-
+   (this.getDenominator() * other.getNumerator()),
+   this.getDenominator() * other.getDenominator()
+   );
+   return difference;
+ }
 }
