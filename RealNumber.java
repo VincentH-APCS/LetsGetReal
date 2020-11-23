@@ -16,8 +16,14 @@ public class RealNumber{
     if(value == 0 && other.getValue() == 0){
       return true;
     }
-    if(((value * 1.001) >= other.getValue()) &&
-       ((value * 0.999) <= other.getValue())){
+    if(value == 0 && other.getValue() != 0){
+      return false;
+    }
+    if(value != 0 && other.getValue() == 0){
+      return false;
+    }
+    if( Math.abs(value - other.getValue()) / value < 0.00001 ||
+        Math.abs(other.getValue() - value) / value < 0.00001){
       return true;
     }
     else return false;
