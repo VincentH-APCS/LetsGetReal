@@ -12,7 +12,7 @@ public class RealNumber extends Number{
   public String toString(){
     return ""+getValue();
   }
-  public boolean equals(RealNumber other){
+  /*public boolean equals(RealNumber other){
     if(value == 0 && other.getValue() == 0){
       return true;
     }
@@ -21,13 +21,13 @@ public class RealNumber extends Number{
     }
     if(value != 0 && other.getValue() == 0){
       return false;
-    }
+    /
     if( Math.abs(value - other.getValue()) / value < 0.00001 ||
         Math.abs(other.getValue() - value) / value < 0.00001){
       return true;
     }
     else return false;
-  }
+  } */
   public RealNumber add(RealNumber other){
     RealNumber sum = new RealNumber(value + other.getValue());
     return sum;
