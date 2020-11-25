@@ -38,6 +38,12 @@ public class RationalNumber extends RealNumber{
       else return false;
   }
   public String toString(){
+    if (numerator == 0){
+      return "0";
+    }
+    if(denominator == 1){
+      return ""+numerator;
+    }
     return ""+numerator+"/"+denominator;
   }
   private static int gcd(int a, int b){
