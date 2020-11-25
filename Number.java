@@ -10,6 +10,21 @@ public abstract class Number{
     }
     return 0;
   }
-
+public boolean equals(Number other){
+    if(this.getValue() == 0 && other.getValue() == 0){
+      return true;
+    }
+    if(this.getValue() == 0 && other.getValue() != 0){
+      return false;
+    }
+    if(this.getValue() != 0 && other.getValue() == 0){
+      return false;
+    }
+    if( Math.abs(this.getValue() - other.getValue()) / this.getValue() < 0.00001 ||
+        Math.abs(other.getValue() - this.getValue()) / this.getValue() < 0.00001){
+      return true;
+    }
+    else return false;
+  }
 
 }
