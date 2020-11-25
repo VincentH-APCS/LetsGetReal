@@ -12,12 +12,10 @@ public class Tester{
     RealNumber yy = new RealNumber(7);
     RealNumber ty = new RealNumber(6);
 
-    System.out.println(tt.equals(yy));
-    System.out.println(ty.equals(tt));
-    System.out.println(yy.equals(tt));
-    System.out.println(a.equals(c));
-    System.out.println(e.equals(d));
-    System.out.println(b.toString());
-    System.out.println(g.toString());
+    RealNumber pie = new RealNumber(Math.PI);
+    RealNumber badpie = new RealNumber(-Math.PI);
+
+    System.out.println(pie.equals(badpie));
+    System.out.println(badpie.equals(pie));
   }
 }
