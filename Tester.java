@@ -6,15 +6,18 @@ public class Tester{
     RationalNumber d = new RationalNumber(1,2);
     RationalNumber e = new RationalNumber(5,9);
     RationalNumber f = new RationalNumber(-2,-4);
-    RationalNumber g = new RationalNumber(3,10);
+    RationalNumber g = new RationalNumber(3,1);
     RationalNumber h = new RationalNumber(6,-10);
-    RationalNumber tt = new RationalNumber(66,100);
-    RationalNumber yy = new RationalNumber(77,200);
+    RealNumber tt = new RealNumber(6);
+    RealNumber yy = new RealNumber(7);
+    RealNumber ty = new RealNumber(6);
 
-  System.out.println(a.subtract(b));
-  System.out.println(a.subtract(h));
-  System.out.println(d.subtract(g));
-  System.out.println(tt.subtract(yy));
-  System.out.println(h.subtract(a));
+    System.out.println(tt.equals(yy));
+    System.out.println(ty.equals(tt));
+    System.out.println(yy.equals(tt));
+    System.out.println(a.equals(c));
+    System.out.println(e.equals(d));
+    System.out.println(b.toString());
+    System.out.println(g.toString());
   }
 }
