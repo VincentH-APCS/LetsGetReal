@@ -23,6 +23,12 @@ public class RealNumber extends Number{
     if(value != 0 && other.getValue() == 0){
       return false;
     }
+    if(value > 0 && other.getValue() < 0){
+      return false;
+    }
+    if(value < 0 && other.getValue() > 0){
+      return false;
+    }
     if( Math.abs(value - other.getValue()) / value < 0.00001 ||
         Math.abs(other.getValue() - value) / value < 0.00001){
       return true;
